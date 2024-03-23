@@ -140,12 +140,12 @@ const Companies = () => {
                       Startups.
                     </p>
                     <p className="font-bold text-[18px]">
-                      "Students and staff benefit from Sapphire's custom data
-                      delivery software."
+                      Students and staff benefit from Sapphire custom data
+                      delivery software.
                     </p>
                     <p className="font-bold text-[13px] ">
-                      "Students and staff benefit from Sapphire's custom data
-                      delivery software."
+                    Students and staff benefit from Sapphire custom data
+                      delivery software.
                     </p>
                   </div>
                 </div>

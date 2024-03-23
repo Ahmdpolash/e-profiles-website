@@ -26,7 +26,7 @@ const SignUp = () => {
           src={blob1}
           height={10}
           width={355}
-          alt="blob"
+          alt="blob1"
         />
 
         {/* blob-two */}
@@ -36,7 +36,7 @@ const SignUp = () => {
           src={blob2}
           height={120}
           width={95}
-          alt="blob"
+          alt="blob2"
         />
         {/* blob-three */}
 
@@ -45,7 +45,7 @@ const SignUp = () => {
           src={blob3}
           height={120}
           width={110}
-          alt="blob"
+          alt="blob3"
         />
       </div>
 
@@ -110,7 +110,7 @@ const SignUp = () => {
                     />
 
                     <select className="px-3 text-slate-700 py-3 rounded-md w-full border-2 mb-3 text-dark placeholder:text-slate-700 border-slate-200 outline-blue-500">
-                      <option selected >
+                      <option >
                         Choose your country
                       </option>
                       <option value="Bangladesh">Bangladesh</option>

@@ -28,7 +28,7 @@ const Login = () => {
           src={blob1}
           height={10}
           width={355}
-          alt="blob"
+          alt="blob1"
         />
 
         <Image
@@ -36,7 +36,7 @@ const Login = () => {
           src={blob2}
           height={120}
           width={95}
-          alt="blob"
+          alt="blob2"
         />
 
         <Image
@@ -44,7 +44,7 @@ const Login = () => {
           src={blob3}
           height={120}
           width={110}
-          alt="blob"
+          alt="blob3"
         />
       </div>
 

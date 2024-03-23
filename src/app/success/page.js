@@ -17,12 +17,14 @@ const ForgotPassword = () => {
           src={blob1}
           height={10}
           width={355}
+          alt="blob"
         />
 
         <Image
           className="absolute translate-[360deg] right-[290px] top-10 w-ful h-ful"
           src={blob2}
           height={120}
+          alt="blob"
           width={95}
         />
 
@@ -31,6 +33,7 @@ const ForgotPassword = () => {
           src={blob3}
           height={120}
           width={110}
+          alt="blob"
         />
       </div>
 
@@ -46,9 +49,11 @@ const ForgotPassword = () => {
           </div>
 
           <div>
-            <Image src={success} height={300} width={360}/>
+            <Image src={success} height={300} width={360} alt="success" />
 
-            <h2 className="text-dark font-bold text-[17px] pt-5 lg:pt-8">Please check your email for create a new way password</h2>
+            <h2 className="text-dark font-bold text-[17px] pt-5 lg:pt-8">
+              Please check your email for create a new way password
+            </h2>
           </div>
         </div>
       </div>

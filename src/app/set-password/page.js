@@ -22,6 +22,7 @@ const ForgotPassword = () => {
           src={blob1}
           height={10}
           width={355}
+          alt="blob"
         />
 
         <Image
@@ -29,6 +30,7 @@ const ForgotPassword = () => {
           src={blob2}
           height={120}
           width={95}
+          alt="blob"
         />
 
         <Image
@@ -36,6 +38,7 @@ const ForgotPassword = () => {
           src={blob3}
           height={120}
           width={110}
+          alt="blob"
         />
       </div>
 
@@ -104,7 +107,7 @@ const ForgotPassword = () => {
                     {/* Pass Input field */}
 
                     <div className="mt-5 md:mt-6 lg:mt-8">
-                      <Link href='/success'>
+                      <Link href="/success">
                         <button
                           className="py-3 w-full font-medium bg-primary text-white rounded-lg"
                           type="submit"
@@ -119,7 +122,7 @@ const ForgotPassword = () => {
             </div>
 
             <div className="w-[60%] lg:w-full order-1 lg:order-2 mt- h-ull p-4">
-              <Image height={450} width={474} src={men} />
+              <Image height={450} width={474} src={men} alt="men"/>
             </div>
           </div>
         </div>
