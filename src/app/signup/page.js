@@ -5,6 +5,9 @@ import men from "../,,/../../assets/Login/character.png";
 import blob1 from "../,,/../../assets/Login/blob1.png";
 import blob2 from "../,,/../../assets/Login/blob2.png";
 import blob3 from "../,,/../../assets/Login/blob3.png";
+import facebook from "../../assets/Login/facebook.png";
+import google from "../../assets/Login/google.svg";
+import linkedin from "../../assets/Login/linkedin.svg";
 import Link from "next/link";
 import { FaRegEyeSlash } from "react-icons/fa6";
 import { FaEye } from "react-icons/fa";
@@ -23,6 +26,7 @@ const SignUp = () => {
           src={blob1}
           height={10}
           width={355}
+          alt="blob"
         />
 
         {/* blob-two */}
@@ -32,6 +36,7 @@ const SignUp = () => {
           src={blob2}
           height={120}
           width={95}
+          alt="blob"
         />
         {/* blob-three */}
 
@@ -40,6 +45,7 @@ const SignUp = () => {
           src={blob3}
           height={120}
           width={110}
+          alt="blob"
         />
       </div>
 
@@ -104,7 +110,7 @@ const SignUp = () => {
                     />
 
                     <select className="px-3 text-slate-700 py-3 rounded-md w-full border-2 mb-3 text-dark placeholder:text-slate-700 border-slate-200 outline-blue-500">
-                      <option selected value="">
+                      <option selected >
                         Choose your country
                       </option>
                       <option value="Bangladesh">Bangladesh</option>
@@ -203,9 +209,11 @@ const SignUp = () => {
                           href="#"
                           className="hover:scale-105 bg-white rounded-xl ease-in-out duration-300 shadow-lg px-3 py-[10px] border border-slate-200 m-1"
                         >
-                          <img
+                          <Image
                             className="max-w-[30px]"
-                            src="https://ucarecdn.com/8f25a2ba-bdcf-4ff1-b596-088f330416ef/"
+                            height={30}
+                            width={30}
+                            src={google}
                             alt="Google"
                           />
                         </button>
@@ -213,20 +221,24 @@ const SignUp = () => {
                           href="#"
                           className="hover:scale-105 bg-white rounded-xl ease-in-out duration-300 shadow-lg px-3 py-[10px] border border-slate-200 m-1"
                         >
-                          <img
+                          <Image
+                            height={30}
+                            width={30}
+                            alt="Google"
                             className="max-w-[30px]"
-                            src="https://i.ibb.co/RzBSCDk/5ed01d297ac58-removebg-preview.png"
-                            alt="Facebook"
+                            src={facebook}
                           />
                         </button>
                         <button
                           href="#"
                           className="hover:scale-105 bg-white rounded-xl ease-in-out duration-300 shadow-lg px-3 py-[10px] border border-slate-200 m-1"
                         >
-                          <img
+                          <Image
+                            height={30}
+                            width={30}
+                            alt="linkedin"
                             className="max-w-[28px]"
-                            src="https://ucarecdn.com/95eebb9c-85cf-4d12-942f-3c40d7044dc6/"
-                            alt="Google"
+                            src={linkedin}
                           />
                         </button>
                       </div>
