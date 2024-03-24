@@ -57,8 +57,10 @@ const Navbar = () => {
           {/* Mobile menu */}
           <div
             className={`${
-              open ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"
-            } lg:hidden transition-all z-50 duration-500 border border-gray-200 shadow-lg  transform h-full w-[350px] bg-white text-black absolute top-0 left-0`}
+              open
+                ? "translate-x-0 opacity-100"
+                : "-translate-x-full  opacity-0"
+            } lg:hidden  transition-all z-50 duration-500 border border-gray-200 shadow-lg  transform h-ful w-[350px] bg-white text-black fixed h-screen top-0 left-0`}
           >
             <button
               className="px-4 py-2 text-3xl font-semibold flex absolute right-0 mt-2"
@@ -73,7 +75,7 @@ const Navbar = () => {
               <li>
                 <Link href="/login" className="">
                   {" "}
-                  <button className="flex justify-center text-[15px] items-center mx-auto gap-2 lg:ml-4 py-[7px] px-5 bg-orange text-white rounded-md font-normal ">
+                  <button className="flex justify-center text-[15px] items-center mx-auto gap-2 lg:ml-4 py-[7px] px-5 bg-primary text-white rounded-md font-normal ">
                     Sign in <FiUserPlus className="text-[18px] mb-1" />
                   </button>
                 </Link>

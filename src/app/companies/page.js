@@ -144,7 +144,7 @@ const Companies = () => {
                       delivery software.
                     </p>
                     <p className="font-bold text-[13px] ">
-                    Students and staff benefit from Sapphire custom data
+                      Students and staff benefit from Sapphire custom data
                       delivery software.
                     </p>
                   </div>
