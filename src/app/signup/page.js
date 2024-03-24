@@ -110,9 +110,7 @@ const SignUp = () => {
                     />
 
                     <select className="px-3 text-slate-700 py-3 rounded-md w-full border-2 mb-3 text-dark placeholder:text-slate-700 border-slate-200 outline-blue-500">
-                      <option >
-                        Choose your country
-                      </option>
+                      <option>Choose your country</option>
                       <option value="Bangladesh">Bangladesh</option>
                       <option value="India">India</option>
                       <option value="Pakistan">Pakistan</option>
@@ -224,7 +222,7 @@ const SignUp = () => {
                           <Image
                             height={30}
                             width={30}
-                            alt="Google"
+                            alt="facebook"
                             className="max-w-[30px]"
                             src={facebook}
                           />

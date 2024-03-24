@@ -75,11 +75,8 @@ const Press = ({ title }) => {
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-6">
             {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(
               (item, i) => (
-                <Link href='/single-press'>
-                  <div
-                    key={i}
-                    className="border border-slate-200 shadow-sm p-4 rounded-lg"
-                  >
+                <Link key={i} href="/single-press">
+                  <div className="border border-slate-200 shadow-sm p-4 rounded-lg">
                     <div className="">
                       <Image
                         className=" rounded-md w-full"

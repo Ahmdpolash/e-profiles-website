@@ -16,8 +16,9 @@ import Image from "next/image";
 
 const images = [image1, image2, image3];
 
-const page = () => {
+const SingleService = () => {
   const [currentImage, setCurrentImage] = useState(images[0]);
+
   return (
     <div>
       <Navbar />
@@ -120,7 +121,7 @@ const page = () => {
                 <span>
                   Do you possess an innovative project idea that you dream of
                   bringing to life? Are you weary of wrestling with vexing bugs
-                  in your Java code or perhaps you're eager to embark on
+                  in your Java code or perhaps you are eager to embark on
                   creating a Java project or a game?
                 </span>
                 <br /> <br />
@@ -140,12 +141,12 @@ const page = () => {
                   tackling coding challenges, crafting captivating games, and
                   delivering intricate projects. In the front end, I am adept at
                   utilizing Swing or JavaFX. <br /> <br /> My mission is
-                  clear-cut: to efficiently and effectively address your coding
-                  needs. Whether it's resolving elusive bugs or embarking on a
+                  clear-cut to efficiently and effectively address your coding
+                  needs. Whether it is resolving elusive bugs or embarking on a
                   new project, my skills are at your disposal. From bug fixes to
                   the construction of exceptional Java applications
-                  incorporating AI algorithms or design patterns, I've got the
-                  expertise to bring your coding vision to life. <br /> <br />{" "}
+                  incorporating AI algorithms or design patterns, I have got the
+                  expertise to bring your coding vision to life. <br /> <br />
                   In this offering, I undertake the creation of Java console
                   programs and JavaFX programs. The Java software will be
                   delivered as a Maven project containing the source code.
@@ -171,7 +172,7 @@ const page = () => {
                   available, JavaFX stands out as the most advanced. It
                   facilitates a fluid layout achievable through the Grid Pane as
                   the main container, and its styling mirrors that of a website,
-                  seamlessly integrating with CSS scripts. <br /> <br /> Let's
+                  seamlessly integrating with CSS scripts. <br /> <br /> Lets
                   collaborate and transform your coding ideas into reality!{" "}
                   <br /> <br /> Cordially, <br /> Thank you.
                 </span>
@@ -238,4 +239,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default SingleService;
