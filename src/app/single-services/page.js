@@ -4,8 +4,15 @@ import Footer from "@/Components/shared/Footer";
 import Navbar from "@/Components/shared/Navbar";
 import React, { useState } from "react";
 import { FaStar } from "react-icons/fa6";
-import { IoCartOutline } from "react-icons/io5";
 import { PiHandCoinsDuotone } from "react-icons/pi";
+import { IoTimeOutline } from "react-icons/io5";
+import { IoCartOutline } from "react-icons/io5";
+import { FaChartLine } from "react-icons/fa";
+import { TbUserSquare } from "react-icons/tb";
+import user1 from "../../assets/profiles/men.png";
+import men from "../../assets/profiles/sm.png";
+import { GoVerified } from "react-icons/go";
+
 import { GoThumbsup } from "react-icons/go";
 
 import image1 from "../../assets/Rectangle 3843.png";
@@ -225,11 +232,247 @@ const SingleService = () => {
                 </div>
               ))}
 
-              <div className="text-right inline-block">
-                <button className="bg-primary inline-block text-right text-[18px] w-full  py-2 rounded-md text-white">
+              <div className="text-right flex justify-end ">
+                <button className="bg-primary  text-right text-[18px] px-4  py-2 rounded-md text-white">
                   More reviews
                 </button>
               </div>
+            </div>
+          </section>
+
+          {/* about seller */}
+
+          <section className="my-2">
+            <h2 className="mb-2 font-bold text-[22px] text-[#000000]">
+              About the seller
+            </h2>
+            <div className="border border-slate-500 p-4">
+              <div className="flex gap-3">
+                <Image
+                  className="h-[44px] w-[44px] rounded-full"
+                  src={user}
+                  height={37}
+                  width={37}
+                  alt="user"
+                />
+
+                <div className="mb-3">
+                  <div className="flex items-center gap-2">
+                    <h2 className="font-bold text-[19px] ">NicolasTahari</h2>
+                    <span>
+                      <GoVerified className="text-xl text-primary" />
+                    </span>
+                  </div>
+
+                  <p className="my-2 text-slate-500 text-[18px] flex gap-1 items-center">
+                    <IoTimeOutline className="text-xl" /> 19 minutes ago
+                  </p>
+
+                  <div className="flex flex-col lg:flex-row gap-10 w-full py-2 flex-wrap j ">
+                    <div className="w-full lg:w-[65%]">
+                      <p className="text-[#000000] text-[17px] font-normal">
+                        Lorem ipsum dolor sit amet consectetur. Ultrices
+                        adipiscing proin sed at urna donec. Dolor egestas
+                        consequat in turpis tempor nunc dignissim laoreet. Hac
+                        at aliquam malesuada elit vivamus tincidunt. Eu tellus
+                        elementum proin at quis nisl nibh donec molestie. Amet
+                        mauris diam scelerisque est in dis consectetur diam.
+                        Enim faucibus mauris ullamcorper lacus elementum.
+                        Molestie cras diam elit id cursus ante placerat euismod
+                        amet. Sed eget at gravida ultricies fringilla ut integer
+                        aliquet. In hac volutpat tortor non mauris id eget
+                        molestie. Lobortis in phasellus pellentesque phasellus
+                        purus aliquet enim purus. A nisl etiam at ultrices. Duis
+                        sed arcu sagittis egestas enim. Habitasse rhoncus
+                        ultricies tortor at. Tristique risus in nisl sodales
+                        sagittis lectus cras. Eu facilisis a augue non. Mi in
+                        adipiscing turpis eleifend leo felis nulla vestibulum
+                        malesuada. Venenatis suspendisse nunc tristique dolor.
+                        Convallis sit purus rhoncus mattis proin porttitor nec
+                        scelerisque quisque. Tellus enim laoreet in ut a lorem
+                        vitae.
+                      </p>
+                      <div className="text-center mt-2 flex justify-center ">
+                        <button className="bg-primary  text-right text-[18px] px-5 lg:px-7  py-2 rounded-md text-white">
+                          Learn more
+                        </button>
+                      </div>
+                    </div>
+
+                    <div className="w-full space-y-1 lg:space-y-3 lg:w-[30%]">
+                      <div className="flex justify-between items-center">
+                        <div className="flex items-center gap-2">
+                          <span>
+                            <IoTimeOutline className="text-[22px] text-slate-600" />
+                          </span>
+                          <h2 className="font-normal text-slate-600 text-[18px] ">
+                            Average response time
+                          </h2>
+                        </div>
+
+                        <h2 className="text-slate-600 text-[19px] font-normal">
+                          8 h
+                        </h2>
+                      </div>
+
+                      <div className="flex justify-between items-center">
+                        <div className="flex items-center gap-2">
+                          <span>
+                            <IoCartOutline className="text-[22px] text-slate-600" />
+                          </span>
+                          <h2 className="font-normal text-slate-600 text-[18px] ">
+                            Orders in progress
+                          </h2>
+                        </div>
+
+                        <h2 className="text-slate-600 text-[19px] font-normal">
+                          15
+                        </h2>
+                      </div>
+
+                      <div className="flex justify-between items-center">
+                        <div className="flex items-center gap-2">
+                          <span>
+                            <FaChartLine className="text-[22px] text-slate-600" />
+                          </span>
+                          <h2 className="font-normal text-slate-600 text-[18px] ">
+                            Sales in total
+                          </h2>
+                        </div>
+
+                        <h2 className="text-slate-600 text-[19px] font-normal">
+                          5,932
+                        </h2>
+                      </div>
+
+                      <div className="flex justify-between items-center">
+                        <div className="flex items-center gap-2">
+                          <span>
+                            <TbUserSquare className="text-[22px] text-slate-600" />
+                          </span>
+                          <h2 className="font-normal text-slate-600 text-[18px] ">
+                            Seller since
+                          </h2>
+                        </div>
+
+                        <h2 className="text-slate-600 text-[19px] font-normal">
+                          Feb , 2016{" "}
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* service */}
+
+          <section className="mt-3 py-2">
+            <h2 className="mb-2  py-2 font-bold text-[22px] text-[#000000]">
+              Other services provided by this seller{" "}
+            </h2>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 lg:gap-10">
+              {[1, 2, 3, 4, 5].map((item, i) => (
+                <div key={i} className="">
+                  <div className="">
+                    <Image
+                      className=" rounded-md w-full"
+                      src={user1}
+                      height={120}
+                      width={150}
+                      alt="user"
+                    />
+                  </div>
+                  <div className="space-y-1 pt-3  py-1">
+                    <div className="flex mb-2 items-center gap-3">
+                      <Image
+                        className="rounded-full border"
+                        src={men}
+                        height={40}
+                        width={40}
+                        alt="user"
+                      />
+                      <h2 className="font-bold text-[16px] text-[#000000]">
+                        Robert D. Caldwell
+                      </h2>
+                    </div>
+                    <p className="font-medium text-[15px] text-[#000000]">
+                      I will be full stack web and software developer build
+                      applications
+                    </p>
+
+                    <div className="flex items-center gap-3">
+                      <FaStar className="text-xl text-[#FFAD33]" />
+                      <p className="text-[#111111]">5.0</p>
+                      <p className="text-slate-500">(65)</p>
+                    </div>
+
+                    <h4 className="font-semibold text-[16px] text-[#000000]">
+                      From $185
+                    </h4>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="text-center mt-5 my-2 flex justify-center ">
+              <button className="bg-primary  text-right text-[18px] px-5 lg:px-7  py-2 rounded-md text-white">
+                All their services
+              </button>
+            </div>
+          </section>
+
+          {/* realted services */}
+
+          <section className="mt-4 lg:mt-10 py-2">
+            <h2 className="mb-2  py-2 font-bold text-[22px] text-[#000000]">
+              All their services
+            </h2>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 lg:gap-10">
+              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, i) => (
+                <div key={i} className="">
+                  <div className="">
+                    <Image
+                      className=" rounded-md w-full"
+                      src={user1}
+                      height={120}
+                      width={150}
+                      alt="user"
+                    />
+                  </div>
+                  <div className="space-y-1 pt-3  py-1">
+                    <div className="flex mb-2 items-center gap-3">
+                      <Image
+                        className="rounded-full border"
+                        src={men}
+                        height={40}
+                        width={40}
+                        alt="user"
+                      />
+                      <h2 className="font-bold text-[16px] text-[#000000]">
+                        Robert D. Caldwell
+                      </h2>
+                    </div>
+                    <p className="font-medium text-[15px] text-[#000000]">
+                      I will be full stack web and software developer build
+                      applications
+                    </p>
+
+                    <div className="flex items-center gap-3">
+                      <FaStar className="text-xl text-[#FFAD33]" />
+                      <p className="text-[#111111]">5.0</p>
+                      <p className="text-slate-500">(65)</p>
+                    </div>
+
+                    <h4 className="font-semibold text-[16px] text-[#000000]">
+                      From $185
+                    </h4>
+                  </div>
+                </div>
+              ))}
             </div>
           </section>
         </div>
