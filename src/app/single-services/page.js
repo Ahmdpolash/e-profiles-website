@@ -6,10 +6,12 @@ import React, { useState } from "react";
 import { FaStar } from "react-icons/fa6";
 import { IoCartOutline } from "react-icons/io5";
 import { PiHandCoinsDuotone } from "react-icons/pi";
+import { GoThumbsup } from "react-icons/go";
 
 import image1 from "../../assets/Rectangle 3843.png";
 import image2 from "../../assets/Frame 611 (1).png";
 import image3 from "../../assets/Frame 611.png";
+import user from "../../assets/Ellipse 10.png";
 import Image from "next/image";
 
 const images = [image1, image2, image3];
@@ -110,7 +112,7 @@ const page = () => {
 
           <section className="mt-4 my-4">
             <div>
-              <h2 className="mb-2 font-bold text-[21px] text-[#000000]">
+              <h2 className="mb-2 font-bold text-[22px] text-[#000000]">
                 Description
               </h2>
 
@@ -176,9 +178,62 @@ const page = () => {
               </div>
             </div>
           </section>
+
+          {/* review */}
+
+          <section>
+            <h2 className="mb-2 border-b-2 border-slate-300 py-2 font-bold text-[22px] text-[#000000]">
+              Review
+            </h2>
+
+            <div>
+              {[1, 2, 3].map((item, index) => (
+                <div
+                  key={index}
+                  className="flex gap-3 mb-2 border-b-2 border-slate-300 pb-2"
+                >
+                  <Image
+                    className="h-[44px] w-[44px] rounded-full"
+                    src={user}
+                    height={37}
+                    width={37}
+                    alt="user"
+                  />
+                  <div>
+                    <div className="flex items-center gap-2">
+                      <h2 className="font-bold text-[19px] ">NicolasTahari</h2>
+                      <span>
+                        <GoThumbsup className="text-xl" />
+                      </span>
+                      <div className="flex text-[#FFAD33] items-center gap-1">
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                      </div>
+                    </div>
+
+                    <h2 className="text-[18px] lg:text-[20px] font-normal py-1 lg:py-2">
+                      Excellent work as usual, I recommend!
+                    </h2>
+                    <p className="text-slate-500 text-[18px] lg:text-[19px] font-normal">
+                      Mar 10, 2024 at 6:59 PM
+                    </p>
+                  </div>
+                </div>
+              ))}
+
+              <div className="text-right inline-block">
+                <button className="bg-primary inline-block text-right text-[18px] w-full  py-2 rounded-md text-white">
+                  More reviews
+                </button>
+              </div>
+            </div>
+          </section>
         </div>
       </Container>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
