@@ -1,8 +1,17 @@
 "use client";
 import { useState } from "react";
+import MissionStatement from "./Tabs/MissionStatement";
+import History from "./Tabs/History";
+import Target from "./Tabs/Target";
+import Competitive from "./Tabs/Competitive";
+import Financial from "./Tabs/Financial";
+import Milestones from "./Tabs/Milestones";
+import Partnerships from "./Tabs/Partnerships";
+import Social from "./Tabs/Social";
+import Future from "./Tabs/Future";
 
 const MidTabs = () => {
-  const [state, setState] = useState("Mission Statement");
+  const [state, setState] = useState("Mission");
 
   return (
     <div className="my-3">
@@ -11,18 +20,18 @@ const MidTabs = () => {
         <div className="col-span-1 w-full ">
           <ul className="flex gap-2 tracking-wider lg:gap-0 items-center lg:items-start flex-row cursor-pointer flex-wrap lg:flex-col space-y-2">
             <li
-              onClick={() => setState("mission")}
+              onClick={() => setState("Mission")}
               className={`text-primary ${
-                state === "Mission Statement" ? "font-bold" : ""
-              }`}
+                state === "Mission" ? "font-bold" : "font-normal "
+              } text-[19px]`}
             >
               Mission Statement
             </li>
 
             <li
-              onClick={() => setState("history")}
+              onClick={() => setState("History")}
               className={`text-primary ${
-                state === "history" ? "font-bold" : "font-normal "
+                state === "History" ? "font-bold" : "font-normal "
               } text-[19px]`}
             >
               History
@@ -31,7 +40,7 @@ const MidTabs = () => {
             <li
               onClick={() => setState("Target")}
               className={`text-primary ${
-                state === "history" ? "font-bold" : "font-normal "
+                state === "Target" ? "font-bold" : "font-normal "
               } text-[19px]`}
             >
               Target Market
@@ -40,7 +49,7 @@ const MidTabs = () => {
             <li
               onClick={() => setState("Competitive")}
               className={`text-primary ${
-                state === "history" ? "font-bold" : "font-normal "
+                state === "Competitive" ? "font-bold" : "font-normal "
               } text-[19px]`}
             >
               Competitive Advantage
@@ -48,7 +57,7 @@ const MidTabs = () => {
             <li
               onClick={() => setState("Financial")}
               className={`text-primary ${
-                state === "history" ? "font-bold" : "font-normal "
+                state === "Financial" ? "font-bold" : "font-normal "
               } text-[19px]`}
             >
               Financial Overview
@@ -56,7 +65,7 @@ const MidTabs = () => {
             <li
               onClick={() => setState("Milestones")}
               className={`text-primary ${
-                state === "history" ? "font-bold" : "font-normal "
+                state === "Milestones" ? "font-bold" : "font-normal "
               } text-[19px]`}
             >
               Milestones and Achievements
@@ -64,7 +73,7 @@ const MidTabs = () => {
             <li
               onClick={() => setState("Partnerships")}
               className={`text-primary ${
-                state === "history" ? "font-bold" : "font-normal "
+                state === "Partnerships" ? "font-bold" : "font-normal "
               } text-[19px]`}
             >
               Partnerships or Affiliations
@@ -72,7 +81,7 @@ const MidTabs = () => {
             <li
               onClick={() => setState("Social")}
               className={`text-primary ${
-                state === "history" ? "font-bold" : "font-normal "
+                state === "Social" ? "font-bold" : "font-normal "
               } text-[19px]`}
             >
               Social Responsibility Initiatives
@@ -80,7 +89,7 @@ const MidTabs = () => {
             <li
               onClick={() => setState("Future")}
               className={`text-primary ${
-                state === "history" ? "font-bold" : "font-normal "
+                state === "Future" ? "font-bold" : "font-normal "
               } text-[19px]`}
             >
               Future Goals and Outlook
@@ -89,11 +98,78 @@ const MidTabs = () => {
         </div>
 
         {/* content */}
-        <div className="col-span-3 h-72 w-full border">
+        <div className="col-span-3  w-full ">
           <div>
-            {state === "mission" && <div className="py-3 ">fasfda</div>}
+            {state === "Mission" && (
+              <div className="py-3 ">
+                <MissionStatement />
+              </div>
+            )}
           </div>
-          <div>{state === "history" && <div className="py-3 ">ddd</div>}</div>
+
+          <div>
+            {state === "History" && (
+              <div className="py-3 ">
+                <History />
+              </div>
+            )}
+          </div>
+
+          <div>
+            {state === "Target" && (
+              <div className="py-3 ">
+                <Target />
+              </div>
+            )}
+          </div>
+
+          <div>
+            {state === "Competitive" && (
+              <div className="py-3 ">
+                <Competitive />
+              </div>
+            )}
+          </div>
+
+          <div>
+            {state === "Financial" && (
+              <div className="py-3 ">
+                <Financial />
+              </div>
+            )}
+          </div>
+
+          <div>
+            {state === "Milestones" && (
+              <div className="py-3 ">
+                <Milestones />
+              </div>
+            )}
+          </div>
+
+          <div>
+            {state === "Partnerships" && (
+              <div className="py-3 ">
+                <Partnerships />
+              </div>
+            )}
+          </div>
+
+          <div>
+            {state === "Social" && (
+              <div className="py-3 ">
+                <Social />
+              </div>
+            )}
+          </div>
+
+          <div>
+            {state === "Future" && (
+              <div className="py-3 ">
+                <Future />
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>
