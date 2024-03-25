@@ -8,6 +8,7 @@ import men from "../../assets/profiles/sm.png";
 import Image from "next/image";
 import { FaStar } from "react-icons/fa6";
 import Footer from "@/Components/shared/Footer";
+import Link from "next/link";
 
 const Services = ({ title }) => {
   return (
@@ -47,7 +48,7 @@ const Services = ({ title }) => {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 lg:gap-10">
             {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(
               (item, i) => (
-                <div key={i} className="">
+                <div key={i} className="cursor-pointer">
                   <div className="">
                     <Image
                       className=" rounded-md w-full"
@@ -57,34 +58,37 @@ const Services = ({ title }) => {
                       alt="user"
                     />
                   </div>
-                  <div className="space-y-1 pt-3  py-1">
-                    <div className="flex mb-2 items-center gap-3">
-                      <Image
-                        className="rounded-full border"
-                        src={men}
-                        height={40}
-                        width={40}
-                        alt="user"
-                      />
-                      <h2 className="font-bold text-[16px] text-[#000000]">
-                        Robert D. Caldwell
-                      </h2>
-                    </div>
-                    <p className="font-medium text-[15px] text-[#000000]">
-                      I will be full stack web and software developer build
-                      applications
-                    </p>
+                  <Link href="/single-services">
+                    {" "}
+                    <div className="space-y-1 pt-3  py-1">
+                      <div className="flex mb-2 items-center gap-3">
+                        <Image
+                          className="rounded-full border"
+                          src={men}
+                          height={40}
+                          width={40}
+                          alt="user"
+                        />
+                        <h2 className="font-bold text-[16px] text-[#000000]">
+                          Robert D. Caldwell
+                        </h2>
+                      </div>
+                      <p className="font-medium text-[15px] text-[#000000]">
+                        I will be full stack web and software developer build
+                        applications
+                      </p>
 
-                    <div className="flex items-center gap-3">
-                      <FaStar className="text-xl text-[#FFAD33]" />
-                      <p className="text-[#111111]">5.0</p>
-                      <p className="text-slate-500">(65)</p>
-                    </div>
+                      <div className="flex items-center gap-3">
+                        <FaStar className="text-xl text-[#FFAD33]" />
+                        <p className="text-[#111111]">5.0</p>
+                        <p className="text-slate-500">(65)</p>
+                      </div>
 
-                    <h4 className="font-semibold text-[16px] text-[#000000]">
-                      From $185
-                    </h4>
-                  </div>
+                      <h4 className="font-semibold text-[16px] text-[#000000]">
+                        From $185
+                      </h4>
+                    </div>
+                  </Link>
                 </div>
               )
             )}
