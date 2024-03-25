@@ -26,13 +26,13 @@ const PrivacyPolicy = ({ title }) => {
                 Malvern, Pennsylvania 19355
               </p>
             </div>
-            {data.map((term, i) => (
+            {data.map((privacy, i) => (
               <div className="mb-2">
                 <h2 className="text-[20px] lg:text-[23px] font-semibold text-primary border-b-2 border-primary pb- inline-block py-1">
-                  {term.title}
+                  {privacy.title}
                 </h2>
                 <p className="text-[#000000] text-[18px] lg:text-[19px] py-3 lg:py-4">
-                  {term.description}
+                  {privacy.description}
                 </p>
               </div>
             ))}
