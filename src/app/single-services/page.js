@@ -20,6 +20,7 @@ import image2 from "../../assets/Frame 611 (1).png";
 import image3 from "../../assets/Frame 611.png";
 import user from "../../assets/Ellipse 10.png";
 import Image from "next/image";
+import Ratings from "@/Components/Ratings/Ratings";
 
 const images = [image1, image2, image3];
 
@@ -213,12 +214,8 @@ const SingleService = () => {
                       <span>
                         <GoThumbsup className="text-xl" />
                       </span>
-                      <div className="flex text-[#FFAD33] items-center gap-1">
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
+                      <div className="flex items-center gap-x-1">
+                        <Ratings ratings={5} />
                       </div>
                     </div>
 

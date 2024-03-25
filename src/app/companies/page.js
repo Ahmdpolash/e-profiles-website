@@ -14,6 +14,7 @@ import { IoLocationOutline } from "react-icons/io5";
 
 import Link from "next/link";
 import Footer from "@/Components/shared/Footer";
+import Ratings from "@/Components/Ratings/Ratings";
 
 const Companies = () => {
   return (
@@ -75,11 +76,7 @@ const Companies = () => {
                         </p>
                         <div className="flex items-center gap-x-3">
                           <div className="flex items-center gap-x-1">
-                            <FaStar className="text-xl text-[#FFAD33]" />
-                            <FaStar className="text-xl text-[#FFAD33]" />
-                            <FaStar className="text-xl text-[#FFAD33]" />
-                            <FaStar className="text-xl text-[#FFAD33]" />
-                            <FaStar className="text-xl text-[#FFAD33]" />
+                            <Ratings ratings={5}/>
                           </div>
                           <p className="text-primary flex items-center gap-2 text-[14px] font-medium">
                             200+ review <FaAngleRight />

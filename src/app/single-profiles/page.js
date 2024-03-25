@@ -41,7 +41,7 @@ const SingleService = () => {
               />
             </div>
 
-            <div className="space-y-2 relative bottom-14 w-[86%]  lg:mt-6">
+            <div className="space-y-2 relative bottom-14  lg:bottom-0 w-[86%]  lg:mt-6">
               <div className="flex  justify-between items-center">
                 <div className="flex items-center gap-2 lg:gap-4">
                   <h2 className="font-bold text-2xl md:text-4xl lg:text-5xl">

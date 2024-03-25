@@ -9,6 +9,7 @@ import Image from "next/image";
 import { FaStar } from "react-icons/fa6";
 import Footer from "@/Components/shared/Footer";
 import Link from "next/link";
+import Ratings from "@/Components/Ratings/Ratings";
 
 const Services = ({ title }) => {
   return (
@@ -79,7 +80,10 @@ const Services = ({ title }) => {
                       </p>
 
                       <div className="flex items-center gap-3">
-                        <FaStar className="text-xl text-[#FFAD33]" />
+                        <div className="flex items-center gap-x-1">
+                          <Ratings ratings={1} />
+                        </div>
+
                         <p className="text-[#111111]">5.0</p>
                         <p className="text-slate-500">(65)</p>
                       </div>

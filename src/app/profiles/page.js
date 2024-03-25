@@ -11,6 +11,7 @@ import Image from "next/image";
 import { FaStar } from "react-icons/fa6";
 import Footer from "@/Components/shared/Footer";
 import Ratings from "@/Components/Ratings/Ratings";
+import Link from "next/link";
 
 const Profiles = () => {
   return (
@@ -61,21 +62,25 @@ const Profiles = () => {
                         alt="user"
                       />
                     </div>
-                    <div className="space-y-1 px-3 py-2">
-                      <h2 className="font-bold text-[16px] text-[#000000]">
-                        Robert D. Caldwell
-                      </h2>
-                      <h3 className="font-medium text-[15px] text-[#000000]">
-                        Graphics designer
-                      </h3>
 
-                      <div className="flex items-center gap-2">
-                        <div className="flex items-center gap-x-1">
-                          <Ratings ratings={5}/>
+                    <Link href="/single-profiles">
+                      {" "}
+                      <div className="space-y-1 px-3 py-2">
+                        <h2 className="font-bold text-[16px] text-[#000000]">
+                          Robert D. Caldwell
+                        </h2>
+                        <h3 className="font-medium text-[15px] text-[#000000]">
+                          Graphics designer
+                        </h3>
+
+                        <div className="flex items-center gap-2">
+                          <div className="flex items-center gap-x-1">
+                            <Ratings ratings={5} />
+                          </div>
+                          <p className="text-slate-500">(65)</p>
                         </div>
-                        <p className="text-slate-500">(65)</p>
                       </div>
-                    </div>
+                    </Link>
                   </div>
                 </div>
               )

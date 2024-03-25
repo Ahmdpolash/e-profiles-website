@@ -19,6 +19,22 @@ import { FaAngleRight, FaRegCopyright } from "react-icons/fa6";
 import Link from "next/link";
 
 const Footer = () => {
+  const link = [
+    <>
+      <li>
+        <Link href="/about-us">About Us</Link>
+      </li>
+      <li>
+        <Link href="/privacy-policy">Privacy Policy</Link>
+      </li>
+      <li>
+        <Link href="/refund-policy">Refund Policy</Link>
+      </li>
+      <li>
+        <Link href="/contact-us">Contact Us </Link>
+      </li>
+    </>,
+  ];
   return (
     <div className="bg-[#000000]">
       <Container>
@@ -51,9 +67,9 @@ const Footer = () => {
               <h3 className="font-bold">links</h3>
               <div className="mt-5 lg:mt-10">
                 <ul className="flex flex-col space-y-2">
-                  {[1, 2, 3, 4, 5, 6].map((link, idx) => (
-                    <li key={idx} className="flex gap-2 items-center">
-                      <FaAngleRight /> Link {idx + 1}
+                  {link.map((link, idx) => (
+                    <li key={idx} className="flex flex-col gap-2 ">
+                      {link} 
                     </li>
                   ))}
                 </ul>
@@ -116,7 +132,7 @@ const Footer = () => {
             </div>
             <div className="mt-3 lg:mt-6">
               <h3 className="font-semibold">Social Media</h3>
-              
+
               <div className="my-3">
                 <ul className="flex flex-wrap gap-2 lg:gap-4 items-center">
                   {/* linkedin */}
@@ -185,8 +201,6 @@ const Footer = () => {
                   </a>
                 </ul>
               </div>
-
-
             </div>
           </div>
         </div>
