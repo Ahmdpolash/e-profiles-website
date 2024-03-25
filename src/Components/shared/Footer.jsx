@@ -116,6 +116,7 @@ const Footer = () => {
             </div>
             <div className="mt-3 lg:mt-6">
               <h3 className="font-semibold">Social Media</h3>
+              
               <div className="my-3">
                 <ul className="flex flex-wrap gap-2 lg:gap-4 items-center">
                   {/* linkedin */}
@@ -184,6 +185,8 @@ const Footer = () => {
                   </a>
                 </ul>
               </div>
+
+
             </div>
           </div>
         </div>

@@ -91,7 +91,7 @@ const Navbar = () => {
               </ul>
             </div>
 
-            <Link href="/login" className="ml-10">
+            <Link href="/" className="ml-10">
               {" "}
               <button className="hidden lg:flex text-[15px] items-center gap-2 lg:ml-4 py-[7px] px-5 bg-primary text-white rounded-md font-normal ">
                 Sign in <FiUserPlus className="text-[18px] mb-1" />
