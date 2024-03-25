@@ -1,19 +1,18 @@
-"use client";
 import Navbar from "@/Components/shared/Navbar";
 import cover from "../../assets/profiles/service.jpeg";
 import logo from "../../assets/profiles/softronixs.jpeg";
 import { GoVerified } from "react-icons/go";
 import Image from "next/image";
 import Ratings from "@/Components/Ratings/Ratings";
-import { useState } from "react";
+import user1 from "../../assets/profiles/user-1.png";
+
 import Container from "@/Components/Container";
-import Reviews from "@/Components/SingleProfile/Reviews";
-import Introduction from "@/Components/SingleProfile/Introduction";
-import Contact from "@/Components/SingleProfile/Contact";
+
+import HeaderTabs from "@/Components/SingleProfile/HeaderTabs";
+import Footer from "@/Components/shared/Footer";
+import MidTabs from "@/Components/SingleProfile/MidTabs";
 
 const SingleService = () => {
-  const [state, setState] = useState("introduction");
-
   return (
     <div>
       <Navbar />
@@ -68,68 +67,56 @@ const SingleService = () => {
         </div>
       </div>
 
-      {/* headers tab */}
       <Container>
-        {/* tabs */}
-        <div className=" max-w-xl mx-auto">
-          <div className="flex flex-wrap gap- font-semibold -tracking-tighter cursor-pointer text-[#000000] text-[18px] lg:text-[19px] justify-between py-2 items-center text-enter ">
-            <span
-              className={`${
-                state === "introduction"
-                  ? "text-primary border-b-2 border-primary py-1 duration-300"
-                  : ""
-              }`}
-              onClick={() => setState("introduction")}
-            >
-              Introduction
-            </span>
+        {/* headers tab */}
+        <HeaderTabs />
 
-            <span>Products</span>
+        {/* founders */}
 
-            <span
-              className={`${
-                state === "contact"
-                  ? "text-primary border-b-2 border-primary py-1 duration-300"
-                  : ""
-              }`}
-              onClick={() => setState("contact")}
-            >
-              Contact
-            </span>
+        <div className="py-3 mt-3">
+          <h2 className="text-primary inline-block tracking-wide border-b-2 border-primary py-1 font-semibold text-xl">
+            Founders/Key Executives
+          </h2>
 
-            <span
-              className={`${
-                state === "reviews"
-                  ? "text-primary border-b-2 border-primary py-1 inline-block duration-300"
-                  : ""
-              }`}
-              onClick={() => setState("reviews")}
-            >
-              Review
-            </span>
+          <div className="grid py-3 mt-2 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 lg:gap-10">
+            {[1, 2, 3, 4, 5].map((item, i) => (
+              <div key={i} className="border">
+                <div className="p-">
+                  <div className=" bg-[#F5F5F5]">
+                    <Image
+                      className="p-4 w-full"
+                      src={user1}
+                      height={120}
+                      width={150}
+                      alt="user"
+                    />
+                  </div>
+                  <div className="space-y-1 px-3 py-2">
+                    <h2 className="font-bold text-[16px] text-[#000000]">
+                      Robert D. Caldwell
+                    </h2>
+                    <h3 className="font-medium text-[15px] text-[#000000]">
+                      Graphics designer
+                    </h3>
+
+                    <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-x-1">
+                        <Ratings ratings={5} />
+                      </div>
+                      <p className="text-slate-500">(65)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
-        {/* tab content */}
+        {/* mid tabs */}
 
-        {state === "introduction" && (
-          <div className="py-3 ">
-            <Introduction />
-          </div>
-        )}
-
-        {state === "reviews" && (
-          <div className="py-3 ">
-            <Reviews />
-          </div>
-        )}
-
-        {state === "contact" && (
-          <div className="py-3 ">
-            <Contact />
-          </div>
-        )}
+        <MidTabs />
       </Container>
+      <Footer />
     </div>
   );
 };

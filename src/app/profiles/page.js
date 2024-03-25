@@ -10,6 +10,7 @@ import user5 from "../../assets/profiles/user-5.png";
 import Image from "next/image";
 import { FaStar } from "react-icons/fa6";
 import Footer from "@/Components/shared/Footer";
+import Ratings from "@/Components/Ratings/Ratings";
 
 const Profiles = () => {
   return (
@@ -70,11 +71,7 @@ const Profiles = () => {
 
                       <div className="flex items-center gap-2">
                         <div className="flex items-center gap-x-1">
-                          <FaStar className="text-xl text-[#FFAD33]" />
-                          <FaStar className="text-xl text-[#FFAD33]" />
-                          <FaStar className="text-xl text-[#FFAD33]" />
-                          <FaStar className="text-xl text-[#FFAD33]" />
-                          <FaStar className="text-xl text-[#FFAD33]" />
+                          <Ratings ratings={5}/>
                         </div>
                         <p className="text-slate-500">(65)</p>
                       </div>
