@@ -14,12 +14,12 @@ const About = ({ title }) => {
         <div className="w-full h-[60vh] flex flex-col lg:flex-row flex-wrap items-enter justify-center">
           <div className="w-[50%] h-full  bg-primary-foreground space-y-2">
             <h2 className="font-bold text-[#000000] text-[22px]">
-              Lorem Ipsum is simply <br /> dummy text of the printing <br />{" "}
+              Lorem Ipsum is simply <br /> dummy text of the printing <br />
               and.
             </h2>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
+              industry. Lorem Ipsum has been the industry standard dummy text
               ever since the 1500s.
             </p>
           </div>

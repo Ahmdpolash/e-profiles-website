@@ -27,7 +27,7 @@ const PrivacyPolicy = ({ title }) => {
               </p>
             </div>
             {data.map((privacy, i) => (
-              <div className="mb-2">
+              <div key={i} className="mb-2">
                 <h2 className="text-[20px] lg:text-[23px] font-semibold text-primary border-b-2 border-primary pb- inline-block py-1">
                   {privacy.title}
                 </h2>
