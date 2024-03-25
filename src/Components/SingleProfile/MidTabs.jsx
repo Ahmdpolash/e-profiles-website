@@ -18,7 +18,7 @@ const MidTabs = () => {
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
         {/* tabs */}
         <div className="col-span-1 w-full ">
-          <ul className="flex gap-2 tracking-wider lg:gap-0 items-center lg:items-start flex-row cursor-pointer flex-wrap lg:flex-col space-y-2">
+          <ul className="flex gap-4 tracking-wider lg:gap-0 items-center lg:items-start flex-row cursor-pointer flex-wrap lg:flex-col lg:space-y-2">
             <li
               onClick={() => setState("Mission")}
               className={`text-primary ${
